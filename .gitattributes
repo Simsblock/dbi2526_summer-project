@@ -1,0 +1,19 @@
+# CSV
+*.csv text eol=lf
+
+# JSON
+*.json text eol=lf
+
+# PDFs
+*.pdf binary
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.svg text eol=lf
+*.ico binary
+*.tiff binary
+*.bmp binary
