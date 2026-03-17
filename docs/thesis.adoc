@@ -1,0 +1,55 @@
+= DBI2526 - Summer Project
+:sectnums:
+:theme: ./theme.yml
+:toclevels: 3
+:toc: macro
+
+== Idea & Research Questions
+
+=== Idea
+Analysis of European public transport usage and delays to identify patterns, peak times, and inefficiencies.
+
+=== Research Questions
+* How do delays vary for a specific city across different times of the day?
+* How do delays differ by city, transport type (bus, tram, metro), and weekday vs. weekend?
+* How do yearly delay trends break down into monthly and daily patterns?
+
+== Main Data Sources
+
+=== Data Sources
+* Public transport open data from Wiener Linien (incremental updates – real-time and daily updates)
+* European mobility datasets (periodic updates – yearly/monthly snapshots)
+
+=== Data Characteristics
+* Incremental data: live delay and vehicle tracking updates
+* Update data: historical datasets updated periodically
+
+=== Data Cleansing Steps
+* Remove missing or null values (e.g., missing timestamps)
+* Standardize time formats (UTC conversion)
+* Normalize transport type categories (bus, tram, metro)
+* Remove duplicates from streaming data
+* Handle outliers in delay values
+
+=== Source Links
+* https://www.wienerlinien.at/open-data
+* https://data.europa.eu/
+
+== Enrichment Data
+
+=== Enrichment Idea
+Enhance transport data with external factors such as weather and public holidays to analyze their impact on delays.
+
+=== Enrichment Sources
+* Weather data (temperature, precipitation)
+* Public holiday calendar data
+
+=== Data Preparation Steps
+* Align timestamps between transport and weather datasets
+* Aggregate weather data to hourly/daily levels
+* Encode categorical variables (e.g., holiday vs. non-holiday)
+* Merge datasets using date and location keys
+
+=== Source Links
+* https://open-meteo.com/
+* https://date.nager.at/

@@ -1,0 +1,8 @@
+font:
+  catalog:
+    arial:
+      normal: Arial
+      bold: Arial Bold
+      italic: Arial Italic
+  size:
+    normal: 12pt
