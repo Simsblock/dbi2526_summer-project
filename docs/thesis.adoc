@@ -32,8 +32,7 @@ Analysis of European public transport usage and delays to identify patterns, pea
 * Handle outliers in delay values
 
 === Source Links
-* https://www.wienerlinien.at/open-data
-* https://data.europa.eu/
+* https://www.data.gv.at/
 
 == Enrichment Data
 
@@ -52,4 +51,3 @@ Enhance transport data with external factors such as weather and public holidays
 
 === Source Links
 * https://open-meteo.com/
-* https://date.nager.at/

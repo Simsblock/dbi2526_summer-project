@@ -1,0 +1,7 @@
+Datasources
+
+Wetter:
+https://archive-api.open-meteo.com/v1/archive?latitude=48.2085&longitude=16.3721&start_date=2021-01-01&end_date=2021-12-31&hourly=temperature_2m,snow_depth,snowfall,rain&format=csv
+
+Fahrgäste:
+https://www.wien.gv.at/gogv/l9ogdfahrgaeste2021
