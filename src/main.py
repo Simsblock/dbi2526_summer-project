@@ -8,6 +8,10 @@ from transformer import transform_sex
 from transformer import transform_species
 from transformer import transform_tribal_data 
 
+from factgenerator import unify_realms 
+from factgenerator import caluclate_gc_percent
+from factgenerator import generate_fact 
+
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -15,6 +19,7 @@ DATA_ROOT = os.path.abspath(os.path.join(BASE_DIR, '..', 'data'))
 
 RAW_DIR = os.path.join(DATA_ROOT, 'raw')
 OUT_DIR = os.path.join(DATA_ROOT, 'transformed')
+FACT_OUT_DIR = os.path.join(DATA_ROOT, 'fact')
 
 def process_files():
     os.makedirs(OUT_DIR, exist_ok=True)
@@ -86,6 +91,43 @@ def process_files():
     else:
         print(f"Error: Could not find {target_file} in {RAW_DIR}")
 
+def process_fact():
+    #realms
+    target_file = 'American_Realms.csv'
+    target_file1 = 'European_Realms.csv'
+    target_file2 = 'Japanese_Realms.csv'
+    target_file3 = 'Oceanian_Realms.csv'
+    input_path = os.path.join(RAW_DIR, target_file)
+    input_path1 = os.path.join(RAW_DIR, target_file1)
+    input_path2 = os.path.join(RAW_DIR, target_file2)
+    input_path3 = os.path.join(RAW_DIR, target_file3)
+    #ef realms
+    target_file4 = 'American_Realms_Endgame.csv'
+    target_file5 = 'European_Realms_Endgame.csv'
+    target_file6 = 'Japanese_Realms_Endgame.csv'
+    target_file7 = 'Oceanian_Realms_Endgame.csv'
+    input_path4 = os.path.join(RAW_DIR, target_file4)
+    input_path5 = os.path.join(RAW_DIR, target_file5)
+    input_path6 = os.path.join(RAW_DIR, target_file6)
+    input_path7 = os.path.join(RAW_DIR, target_file7)
+    #gc
+    target_file8 = 'GrandCompanies.csv'
+    input_path8 = os.path.join(RAW_DIR, target_file8)
+
+    df = pd.read_csv(input_path)
+    df1 = pd.read_csv(input_path1)
+    df2 = pd.read_csv(input_path2)
+    df3 = pd.read_csv(input_path3)
+    df4 = pd.read_csv(input_path4)
+    df5 = pd.read_csv(input_path5)
+    df6 = pd.read_csv(input_path6)
+    df7 = pd.read_csv(input_path7)
+    df8 = pd.read_csv(input_path8)
+
+    df_fact = generate_fact(unify_realms(df,df1,df2,df3,df4,df5,df6,df7), caluclate_gc_percent(df8))
+
+    df_fact.to_csv(os.path.join(FACT_OUT_DIR, 'Fact.csv'), index=False)
 
 if __name__ == "__main__":
     process_files()
+    process_fact()

@@ -6,10 +6,12 @@ python := "python3"
 pip := venv_dir + "/bin/pip"
 interpreter := venv_dir + "/bin/python"
 
+[group('exec')]
 export_pdf:
     asciidoctor-pdf ./docs/thesis.adoc
 
-run-transform:
+[group('exec')]
+run:
     {{venv}} src/main.py
 
 [group('venv')]
@@ -23,25 +25,11 @@ setup:
     @echo "Setup complete."
 
 [group('venv')]
-[linux]
-run:
-    @if [ ! -d "{{venv_dir}}" ]; then \
-        echo "Venv not found. Running setup first..."; \
-        just setup; \
-    fi
-    {{interpreter}} src/main.py
-
-[group('venv')]
 [windows]
 setup:
     python -m venv {{venv_dir}}
     {{venv_dir}}\Scripts\pip install --upgrade pip
     {{venv_dir}}\Scripts\pip install -r requirements.txt
-
-[group('venv')]
-[windows]
-run:
-    {{venv_dir}}\Scripts\python src/main.py
 
 [group('venv')]
 clean:

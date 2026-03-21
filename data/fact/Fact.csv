@@ -1,0 +1,649 @@
+Dim_isEndgame,Dim_Realms,Dim_GrandCompany,Fact_PlayerCount
+True,Adamantoise,Immortal Flames,2440
+True,Adamantoise,Maelstrom,2505
+True,Adamantoise,Order of the Twin Adder,2955
+True,Adamantoise,none,18147
+True,Balmung,Immortal Flames,2356
+True,Balmung,Maelstrom,2419
+True,Balmung,Order of the Twin Adder,2854
+True,Balmung,none,17525
+True,Behemoth,Immortal Flames,2381
+True,Behemoth,Maelstrom,2444
+True,Behemoth,Order of the Twin Adder,2884
+True,Behemoth,none,17705
+True,Brynhildr,Immortal Flames,2386
+True,Brynhildr,Maelstrom,2450
+True,Brynhildr,Order of the Twin Adder,2890
+True,Brynhildr,none,17746
+True,Cactuar,Immortal Flames,2474
+True,Cactuar,Maelstrom,2540
+True,Cactuar,Order of the Twin Adder,2996
+True,Cactuar,none,18397
+True,Coeurl,Immortal Flames,2249
+True,Coeurl,Maelstrom,2308
+True,Coeurl,Order of the Twin Adder,2724
+True,Coeurl,none,16723
+True,Diabolos,Immortal Flames,2334
+True,Diabolos,Maelstrom,2396
+True,Diabolos,Order of the Twin Adder,2827
+True,Diabolos,none,17357
+True,Excalibur,Immortal Flames,2365
+True,Excalibur,Maelstrom,2428
+True,Excalibur,Order of the Twin Adder,2864
+True,Excalibur,none,17588
+True,Exodus,Immortal Flames,2348
+True,Exodus,Maelstrom,2411
+True,Exodus,Order of the Twin Adder,2844
+True,Exodus,none,17462
+True,Faerie,Immortal Flames,2467
+True,Faerie,Maelstrom,2533
+True,Faerie,Order of the Twin Adder,2988
+True,Faerie,none,18349
+True,Famfrit,Immortal Flames,2337
+True,Famfrit,Maelstrom,2399
+True,Famfrit,Order of the Twin Adder,2831
+True,Famfrit,none,17381
+True,Gilgamesh,Immortal Flames,2691
+True,Gilgamesh,Maelstrom,2762
+True,Gilgamesh,Order of the Twin Adder,3259
+True,Gilgamesh,none,20012
+True,Goblin,Immortal Flames,2291
+True,Goblin,Maelstrom,2352
+True,Goblin,Order of the Twin Adder,2775
+True,Goblin,none,17040
+True,Halicarnassus,Immortal Flames,604
+True,Halicarnassus,Maelstrom,620
+True,Halicarnassus,Order of the Twin Adder,732
+True,Halicarnassus,none,4492
+True,Hyperion,Immortal Flames,2258
+True,Hyperion,Maelstrom,2318
+True,Hyperion,Order of the Twin Adder,2735
+True,Hyperion,none,16791
+True,Jenova,Immortal Flames,2503
+True,Jenova,Maelstrom,2570
+True,Jenova,Order of the Twin Adder,3032
+True,Jenova,none,18617
+True,Lamia,Immortal Flames,2325
+True,Lamia,Maelstrom,2387
+True,Lamia,Order of the Twin Adder,2816
+True,Lamia,none,17290
+True,Leviathan,Immortal Flames,2390
+True,Leviathan,Maelstrom,2454
+True,Leviathan,Order of the Twin Adder,2895
+True,Leviathan,none,17777
+True,Maduin,Immortal Flames,451
+True,Maduin,Maelstrom,463
+True,Maduin,Order of the Twin Adder,546
+True,Maduin,none,3352
+True,Malboro,Immortal Flames,2267
+True,Malboro,Maelstrom,2327
+True,Malboro,Order of the Twin Adder,2745
+True,Malboro,none,16857
+True,Marilith,Immortal Flames,459
+True,Marilith,Maelstrom,471
+True,Marilith,Order of the Twin Adder,556
+True,Marilith,none,3415
+True,Mateus,Immortal Flames,2376
+True,Mateus,Maelstrom,2439
+True,Mateus,Order of the Twin Adder,2877
+True,Mateus,none,17667
+True,Midgardsormr,Immortal Flames,2486
+True,Midgardsormr,Maelstrom,2553
+True,Midgardsormr,Order of the Twin Adder,3012
+True,Midgardsormr,none,18491
+True,Sargatanas,Immortal Flames,2409
+True,Sargatanas,Maelstrom,2473
+True,Sargatanas,Order of the Twin Adder,2918
+True,Sargatanas,none,17915
+True,Seraph,Immortal Flames,1040
+True,Seraph,Maelstrom,1068
+True,Seraph,Order of the Twin Adder,1260
+True,Seraph,none,7736
+True,Siren,Immortal Flames,2359
+True,Siren,Maelstrom,2422
+True,Siren,Order of the Twin Adder,2858
+True,Siren,none,17547
+True,Ultros,Immortal Flames,2367
+True,Ultros,Maelstrom,2430
+True,Ultros,Order of the Twin Adder,2867
+True,Ultros,none,17605
+True,Zalera,Immortal Flames,2313
+True,Zalera,Maelstrom,2375
+True,Zalera,Order of the Twin Adder,2802
+True,Zalera,none,17203
+True,Alpha,Immortal Flames,844
+True,Alpha,Maelstrom,867
+True,Alpha,Order of the Twin Adder,1023
+True,Alpha,none,6279
+True,Cerberus,Immortal Flames,2125
+True,Cerberus,Maelstrom,2181
+True,Cerberus,Order of the Twin Adder,2574
+True,Cerberus,none,15802
+True,Lich,Immortal Flames,2085
+True,Lich,Maelstrom,2141
+True,Lich,Order of the Twin Adder,2526
+True,Lich,none,15510
+True,Louisoix,Immortal Flames,1894
+True,Louisoix,Maelstrom,1944
+True,Louisoix,Order of the Twin Adder,2294
+True,Louisoix,none,14086
+True,Moogle,Immortal Flames,2150
+True,Moogle,Maelstrom,2207
+True,Moogle,Order of the Twin Adder,2604
+True,Moogle,none,15991
+True,Odin,Immortal Flames,2136
+True,Odin,Maelstrom,2193
+True,Odin,Order of the Twin Adder,2588
+True,Odin,none,15889
+True,Omega,Immortal Flames,2034
+True,Omega,Maelstrom,2088
+True,Omega,Order of the Twin Adder,2463
+True,Omega,none,15124
+True,Phantom,Immortal Flames,880
+True,Phantom,Maelstrom,903
+True,Phantom,Order of the Twin Adder,1066
+True,Phantom,none,6545
+True,Phoenix,Immortal Flames,2157
+True,Phoenix,Maelstrom,2215
+True,Phoenix,Order of the Twin Adder,2613
+True,Phoenix,none,16045
+True,Ragnarok,Immortal Flames,2180
+True,Ragnarok,Maelstrom,2238
+True,Ragnarok,Order of the Twin Adder,2640
+True,Ragnarok,none,16213
+True,Raiden,Immortal Flames,884
+True,Raiden,Maelstrom,908
+True,Raiden,Order of the Twin Adder,1071
+True,Raiden,none,6577
+True,Sagittarius,Immortal Flames,570
+True,Sagittarius,Maelstrom,585
+True,Sagittarius,Order of the Twin Adder,691
+True,Sagittarius,none,4241
+True,Shiva,Immortal Flames,2123
+True,Shiva,Maelstrom,2180
+True,Shiva,Order of the Twin Adder,2572
+True,Shiva,none,15792
+True,Spriggan,Immortal Flames,1944
+True,Spriggan,Maelstrom,1996
+True,Spriggan,Order of the Twin Adder,2354
+True,Spriggan,none,14456
+True,Twintania,Immortal Flames,1913
+True,Twintania,Maelstrom,1964
+True,Twintania,Order of the Twin Adder,2317
+True,Twintania,none,14228
+True,Zodiark,Immortal Flames,2061
+True,Zodiark,Maelstrom,2116
+True,Zodiark,Order of the Twin Adder,2496
+True,Zodiark,none,15328
+True,Aegis,Immortal Flames,1252
+True,Aegis,Maelstrom,1286
+True,Aegis,Order of the Twin Adder,1517
+True,Aegis,none,9313
+True,Alexander,Immortal Flames,1346
+True,Alexander,Maelstrom,1382
+True,Alexander,Order of the Twin Adder,1630
+True,Alexander,none,10011
+True,Anima,Immortal Flames,1373
+True,Anima,Maelstrom,1409
+True,Anima,Order of the Twin Adder,1663
+True,Anima,none,10209
+True,Asura,Immortal Flames,1656
+True,Asura,Maelstrom,1700
+True,Asura,Order of the Twin Adder,2006
+True,Asura,none,12317
+True,Atomos,Immortal Flames,1251
+True,Atomos,Maelstrom,1285
+True,Atomos,Order of the Twin Adder,1516
+True,Atomos,none,9307
+True,Bahamut,Immortal Flames,1392
+True,Bahamut,Maelstrom,1429
+True,Bahamut,Order of the Twin Adder,1686
+True,Bahamut,none,10353
+True,Belias,Immortal Flames,1276
+True,Belias,Maelstrom,1309
+True,Belias,Order of the Twin Adder,1545
+True,Belias,none,9486
+True,Carbuncle,Immortal Flames,1322
+True,Carbuncle,Maelstrom,1357
+True,Carbuncle,Order of the Twin Adder,1601
+True,Carbuncle,none,9832
+True,Chocobo,Immortal Flames,1681
+True,Chocobo,Maelstrom,1726
+True,Chocobo,Order of the Twin Adder,2036
+True,Chocobo,none,12502
+True,Durandal,Immortal Flames,1290
+True,Durandal,Maelstrom,1325
+True,Durandal,Order of the Twin Adder,1563
+True,Durandal,none,9595
+True,Fenrir,Immortal Flames,1295
+True,Fenrir,Maelstrom,1330
+True,Fenrir,Order of the Twin Adder,1569
+True,Fenrir,none,9634
+True,Garuda,Immortal Flames,1243
+True,Garuda,Maelstrom,1276
+True,Garuda,Order of the Twin Adder,1505
+True,Garuda,none,9242
+True,Gungnir,Immortal Flames,1209
+True,Gungnir,Maelstrom,1241
+True,Gungnir,Order of the Twin Adder,1464
+True,Gungnir,none,8988
+True,Hades,Immortal Flames,1506
+True,Hades,Maelstrom,1546
+True,Hades,Order of the Twin Adder,1824
+True,Hades,none,11202
+True,Ifrit,Immortal Flames,1323
+True,Ifrit,Maelstrom,1358
+True,Ifrit,Order of the Twin Adder,1602
+True,Ifrit,none,9836
+True,Ixion,Immortal Flames,1398
+True,Ixion,Maelstrom,1435
+True,Ixion,Order of the Twin Adder,1693
+True,Ixion,none,10398
+True,Kujata,Immortal Flames,1318
+True,Kujata,Maelstrom,1353
+True,Kujata,Order of the Twin Adder,1597
+True,Kujata,none,9803
+True,Mandragora,Immortal Flames,1190
+True,Mandragora,Maelstrom,1222
+True,Mandragora,Order of the Twin Adder,1441
+True,Mandragora,none,8849
+True,Masamune,Immortal Flames,1377
+True,Masamune,Maelstrom,1414
+True,Masamune,Order of the Twin Adder,1668
+True,Masamune,none,10241
+True,Pandaemonium,Immortal Flames,1344
+True,Pandaemonium,Maelstrom,1380
+True,Pandaemonium,Order of the Twin Adder,1628
+True,Pandaemonium,none,9998
+True,Ramuh,Immortal Flames,1187
+True,Ramuh,Maelstrom,1219
+True,Ramuh,Order of the Twin Adder,1438
+True,Ramuh,none,8828
+True,Ridill,Immortal Flames,1319
+True,Ridill,Maelstrom,1354
+True,Ridill,Order of the Twin Adder,1598
+True,Ridill,none,9811
+True,Shinryu,Immortal Flames,1256
+True,Shinryu,Maelstrom,1289
+True,Shinryu,Order of the Twin Adder,1521
+True,Shinryu,none,9341
+True,Tiamat,Immortal Flames,1301
+True,Tiamat,Maelstrom,1336
+True,Tiamat,Order of the Twin Adder,1576
+True,Tiamat,none,9676
+True,Titan,Immortal Flames,1444
+True,Titan,Maelstrom,1482
+True,Titan,Order of the Twin Adder,1749
+True,Titan,none,10736
+True,Tonberry,Immortal Flames,1803
+True,Tonberry,Maelstrom,1851
+True,Tonberry,Order of the Twin Adder,2184
+True,Tonberry,none,13411
+True,Typhon,Immortal Flames,1324
+True,Typhon,Maelstrom,1359
+True,Typhon,Order of the Twin Adder,1603
+True,Typhon,none,9844
+True,Ultima,Immortal Flames,1349
+True,Ultima,Maelstrom,1385
+True,Ultima,Order of the Twin Adder,1634
+True,Ultima,none,10032
+True,Unicorn,Immortal Flames,1223
+True,Unicorn,Maelstrom,1256
+True,Unicorn,Order of the Twin Adder,1482
+True,Unicorn,none,9099
+True,Valefor,Immortal Flames,1176
+True,Valefor,Maelstrom,1207
+True,Valefor,Order of the Twin Adder,1424
+True,Valefor,none,8743
+True,Yojimbo,Immortal Flames,1246
+True,Yojimbo,Maelstrom,1279
+True,Yojimbo,Order of the Twin Adder,1509
+True,Yojimbo,none,9264
+True,Zeromus,Immortal Flames,1230
+True,Zeromus,Maelstrom,1263
+True,Zeromus,Order of the Twin Adder,1490
+True,Zeromus,none,9147
+True,Bismarck,Immortal Flames,216
+True,Bismarck,Maelstrom,222
+True,Bismarck,Order of the Twin Adder,262
+True,Bismarck,none,1606
+True,Ravana,Immortal Flames,898
+True,Ravana,Maelstrom,922
+True,Ravana,Order of the Twin Adder,1088
+True,Ravana,none,6679
+True,Sephirot,Immortal Flames,502
+True,Sephirot,Maelstrom,515
+True,Sephirot,Order of the Twin Adder,608
+True,Sephirot,none,3734
+True,Sophia,Immortal Flames,548
+True,Sophia,Maelstrom,562
+True,Sophia,Order of the Twin Adder,664
+True,Sophia,none,4074
+True,Zurvan,Immortal Flames,154
+True,Zurvan,Maelstrom,158
+True,Zurvan,Order of the Twin Adder,187
+True,Zurvan,none,1146
+False,Adamantoise,Immortal Flames,53416
+False,Adamantoise,Maelstrom,54838
+False,Adamantoise,Order of the Twin Adder,64700
+False,Adamantoise,none,397260
+False,Balmung,Immortal Flames,28607
+False,Balmung,Maelstrom,29368
+False,Balmung,Order of the Twin Adder,34650
+False,Balmung,none,212751
+False,Behemoth,Immortal Flames,52945
+False,Behemoth,Maelstrom,54354
+False,Behemoth,Order of the Twin Adder,64130
+False,Behemoth,none,393760
+False,Brynhildr,Immortal Flames,65998
+False,Brynhildr,Maelstrom,67755
+False,Brynhildr,Order of the Twin Adder,79940
+False,Brynhildr,none,490836
+False,Cactuar,Immortal Flames,45116
+False,Cactuar,Maelstrom,46317
+False,Cactuar,Order of the Twin Adder,54647
+False,Cactuar,none,335533
+False,Coeurl,Immortal Flames,59086
+False,Coeurl,Maelstrom,60659
+False,Coeurl,Order of the Twin Adder,71568
+False,Coeurl,none,439431
+False,Diabolos,Immortal Flames,65069
+False,Diabolos,Maelstrom,66801
+False,Diabolos,Order of the Twin Adder,78815
+False,Diabolos,none,483929
+False,Excalibur,Immortal Flames,46625
+False,Excalibur,Maelstrom,47866
+False,Excalibur,Order of the Twin Adder,56474
+False,Excalibur,none,346753
+False,Exodus,Immortal Flames,64454
+False,Exodus,Maelstrom,66170
+False,Exodus,Order of the Twin Adder,78070
+False,Exodus,none,479354
+False,Faerie,Immortal Flames,48194
+False,Faerie,Maelstrom,49477
+False,Faerie,Order of the Twin Adder,58375
+False,Faerie,none,358425
+False,Famfrit,Immortal Flames,66808
+False,Famfrit,Maelstrom,68586
+False,Famfrit,Order of the Twin Adder,80921
+False,Famfrit,none,496858
+False,Gilgamesh,Immortal Flames,40547
+False,Gilgamesh,Maelstrom,41626
+False,Gilgamesh,Order of the Twin Adder,49112
+False,Gilgamesh,none,301550
+False,Goblin,Immortal Flames,63698
+False,Goblin,Maelstrom,65393
+False,Goblin,Order of the Twin Adder,77154
+False,Goblin,none,473727
+False,Halicarnassus,Immortal Flames,7923
+False,Halicarnassus,Maelstrom,8134
+False,Halicarnassus,Order of the Twin Adder,9597
+False,Halicarnassus,none,58927
+False,Hyperion,Immortal Flames,48302
+False,Hyperion,Maelstrom,49587
+False,Hyperion,Order of the Twin Adder,58505
+False,Hyperion,none,359224
+False,Jenova,Immortal Flames,48713
+False,Jenova,Maelstrom,50010
+False,Jenova,Order of the Twin Adder,59003
+False,Jenova,none,362284
+False,Lamia,Immortal Flames,62641
+False,Lamia,Maelstrom,64308
+False,Lamia,Order of the Twin Adder,75874
+False,Lamia,none,465869
+False,Leviathan,Immortal Flames,47465
+False,Leviathan,Maelstrom,48729
+False,Leviathan,Order of the Twin Adder,57492
+False,Leviathan,none,353005
+False,Maduin,Immortal Flames,5237
+False,Maduin,Maelstrom,5376
+False,Maduin,Order of the Twin Adder,6343
+False,Maduin,none,38949
+False,Malboro,Immortal Flames,68756
+False,Malboro,Maelstrom,70586
+False,Malboro,Order of the Twin Adder,83281
+False,Malboro,none,511349
+False,Marilith,Immortal Flames,5686
+False,Marilith,Maelstrom,5837
+False,Marilith,Order of the Twin Adder,6887
+False,Marilith,none,42288
+False,Mateus,Immortal Flames,50558
+False,Mateus,Maelstrom,51904
+False,Mateus,Order of the Twin Adder,61238
+False,Mateus,none,376007
+False,Midgardsormr,Immortal Flames,56160
+False,Midgardsormr,Maelstrom,57655
+False,Midgardsormr,Order of the Twin Adder,68024
+False,Midgardsormr,none,417671
+False,Sargatanas,Immortal Flames,51622
+False,Sargatanas,Maelstrom,52996
+False,Sargatanas,Order of the Twin Adder,62526
+False,Sargatanas,none,383915
+False,Seraph,Immortal Flames,9686
+False,Seraph,Maelstrom,9944
+False,Seraph,Order of the Twin Adder,11732
+False,Seraph,none,72037
+False,Siren,Immortal Flames,58377
+False,Siren,Maelstrom,59931
+False,Siren,Order of the Twin Adder,70709
+False,Siren,none,434156
+False,Ultros,Immortal Flames,60745
+False,Ultros,Maelstrom,62362
+False,Ultros,Order of the Twin Adder,73577
+False,Ultros,none,451768
+False,Zalera,Immortal Flames,64634
+False,Zalera,Maelstrom,66354
+False,Zalera,Order of the Twin Adder,78287
+False,Zalera,none,480689
+False,Alpha,Immortal Flames,20579
+False,Alpha,Maelstrom,21126
+False,Alpha,Order of the Twin Adder,24926
+False,Alpha,none,153045
+False,Cerberus,Immortal Flames,55886
+False,Cerberus,Maelstrom,57374
+False,Cerberus,Order of the Twin Adder,67692
+False,Cerberus,none,415634
+False,Lich,Immortal Flames,77730
+False,Lich,Maelstrom,79799
+False,Lich,Order of the Twin Adder,94150
+False,Lich,none,578087
+False,Louisoix,Immortal Flames,59988
+False,Louisoix,Maelstrom,61585
+False,Louisoix,Order of the Twin Adder,72660
+False,Louisoix,none,446137
+False,Moogle,Immortal Flames,60379
+False,Moogle,Maelstrom,61986
+False,Moogle,Order of the Twin Adder,73134
+False,Moogle,none,449047
+False,Odin,Immortal Flames,56349
+False,Odin,Maelstrom,57849
+False,Odin,Order of the Twin Adder,68253
+False,Odin,none,419075
+False,Omega,Immortal Flames,49085
+False,Omega,Maelstrom,50391
+False,Omega,Order of the Twin Adder,59454
+False,Omega,none,365050
+False,Phantom,Immortal Flames,22757
+False,Phantom,Maelstrom,23363
+False,Phantom,Order of the Twin Adder,27565
+False,Phantom,none,169248
+False,Phoenix,Immortal Flames,58564
+False,Phoenix,Maelstrom,60122
+False,Phoenix,Order of the Twin Adder,70935
+False,Phoenix,none,435545
+False,Ragnarok,Immortal Flames,51697
+False,Ragnarok,Maelstrom,53073
+False,Ragnarok,Order of the Twin Adder,62618
+False,Ragnarok,none,384476
+False,Raiden,Immortal Flames,25108
+False,Raiden,Maelstrom,25776
+False,Raiden,Order of the Twin Adder,30412
+False,Raiden,none,186731
+False,Sagittarius,Immortal Flames,24396
+False,Sagittarius,Maelstrom,25045
+False,Sagittarius,Order of the Twin Adder,29550
+False,Sagittarius,none,181437
+False,Shiva,Immortal Flames,57367
+False,Shiva,Maelstrom,58893
+False,Shiva,Order of the Twin Adder,69485
+False,Shiva,none,426641
+False,Spriggan,Immortal Flames,43008
+False,Spriggan,Maelstrom,44153
+False,Spriggan,Order of the Twin Adder,52093
+False,Spriggan,none,319855
+False,Twintania,Immortal Flames,48747
+False,Twintania,Maelstrom,50044
+False,Twintania,Order of the Twin Adder,59045
+False,Twintania,none,362537
+False,Zodiark,Immortal Flames,76836
+False,Zodiark,Maelstrom,78881
+False,Zodiark,Order of the Twin Adder,93067
+False,Zodiark,none,571435
+False,Aegis,Immortal Flames,18284
+False,Aegis,Maelstrom,18771
+False,Aegis,Order of the Twin Adder,22147
+False,Aegis,none,135981
+False,Alexander,Immortal Flames,15563
+False,Alexander,Maelstrom,15978
+False,Alexander,Order of the Twin Adder,18851
+False,Alexander,none,115746
+False,Anima,Immortal Flames,15213
+False,Anima,Maelstrom,15618
+False,Anima,Order of the Twin Adder,18427
+False,Anima,none,113141
+False,Asura,Immortal Flames,18265
+False,Asura,Maelstrom,18751
+False,Asura,Order of the Twin Adder,22124
+False,Asura,none,135841
+False,Atomos,Immortal Flames,20328
+False,Atomos,Maelstrom,20869
+False,Atomos,Order of the Twin Adder,24622
+False,Atomos,none,151178
+False,Bahamut,Immortal Flames,15403
+False,Bahamut,Maelstrom,15813
+False,Bahamut,Order of the Twin Adder,18657
+False,Bahamut,none,114554
+False,Belias,Immortal Flames,20628
+False,Belias,Maelstrom,21177
+False,Belias,Order of the Twin Adder,24985
+False,Belias,none,153409
+False,Carbuncle,Immortal Flames,17841
+False,Carbuncle,Maelstrom,18316
+False,Carbuncle,Order of the Twin Adder,21610
+False,Carbuncle,none,132686
+False,Chocobo,Immortal Flames,14767
+False,Chocobo,Maelstrom,15160
+False,Chocobo,Order of the Twin Adder,17887
+False,Chocobo,none,109827
+False,Durandal,Immortal Flames,16797
+False,Durandal,Maelstrom,17244
+False,Durandal,Order of the Twin Adder,20346
+False,Durandal,none,124923
+False,Fenrir,Immortal Flames,14493
+False,Fenrir,Maelstrom,14879
+False,Fenrir,Order of the Twin Adder,17554
+False,Fenrir,none,107785
+False,Garuda,Immortal Flames,17395
+False,Garuda,Maelstrom,17858
+False,Garuda,Order of the Twin Adder,21070
+False,Garuda,none,129371
+False,Gungnir,Immortal Flames,17083
+False,Gungnir,Maelstrom,17538
+False,Gungnir,Order of the Twin Adder,20692
+False,Gungnir,none,127049
+False,Hades,Immortal Flames,16757
+False,Hades,Maelstrom,17203
+False,Hades,Order of the Twin Adder,20297
+False,Hades,none,124625
+False,Ifrit,Immortal Flames,16732
+False,Ifrit,Maelstrom,17178
+False,Ifrit,Order of the Twin Adder,20267
+False,Ifrit,none,124441
+False,Ixion,Immortal Flames,15504
+False,Ixion,Maelstrom,15916
+False,Ixion,Order of the Twin Adder,18779
+False,Ixion,none,115303
+False,Kujata,Immortal Flames,24347
+False,Kujata,Maelstrom,24995
+False,Kujata,Order of the Twin Adder,29490
+False,Kujata,none,181069
+False,Mandragora,Immortal Flames,15699
+False,Mandragora,Maelstrom,16117
+False,Mandragora,Order of the Twin Adder,19016
+False,Mandragora,none,116756
+False,Masamune,Immortal Flames,17517
+False,Masamune,Maelstrom,17983
+False,Masamune,Order of the Twin Adder,21217
+False,Masamune,none,130275
+False,Pandaemonium,Immortal Flames,18507
+False,Pandaemonium,Maelstrom,18999
+False,Pandaemonium,Order of the Twin Adder,22416
+False,Pandaemonium,none,137636
+False,Ramuh,Immortal Flames,20319
+False,Ramuh,Maelstrom,20860
+False,Ramuh,Order of the Twin Adder,24611
+False,Ramuh,none,151115
+False,Ridill,Immortal Flames,16405
+False,Ridill,Maelstrom,16841
+False,Ridill,Order of the Twin Adder,19870
+False,Ridill,none,122003
+False,Shinryu,Immortal Flames,15256
+False,Shinryu,Maelstrom,15662
+False,Shinryu,Order of the Twin Adder,18478
+False,Shinryu,none,113459
+False,Tiamat,Immortal Flames,15661
+False,Tiamat,Maelstrom,16078
+False,Tiamat,Order of the Twin Adder,18969
+False,Tiamat,none,116471
+False,Titan,Immortal Flames,16938
+False,Titan,Maelstrom,17389
+False,Titan,Order of the Twin Adder,20516
+False,Titan,none,125972
+False,Tonberry,Immortal Flames,22026
+False,Tonberry,Maelstrom,22613
+False,Tonberry,Order of the Twin Adder,26679
+False,Tonberry,none,163813
+False,Typhon,Immortal Flames,21987
+False,Typhon,Maelstrom,22572
+False,Typhon,Order of the Twin Adder,26632
+False,Typhon,none,163521
+False,Ultima,Immortal Flames,18080
+False,Ultima,Maelstrom,18561
+False,Ultima,Order of the Twin Adder,21899
+False,Ultima,none,134462
+False,Unicorn,Immortal Flames,19584
+False,Unicorn,Maelstrom,20105
+False,Unicorn,Order of the Twin Adder,23721
+False,Unicorn,none,145649
+False,Valefor,Immortal Flames,18809
+False,Valefor,Maelstrom,19310
+False,Valefor,Order of the Twin Adder,22783
+False,Valefor,none,139888
+False,Yojimbo,Immortal Flames,19575
+False,Yojimbo,Maelstrom,20096
+False,Yojimbo,Order of the Twin Adder,23710
+False,Yojimbo,none,145580
+False,Zeromus,Immortal Flames,18879
+False,Zeromus,Maelstrom,19381
+False,Zeromus,Order of the Twin Adder,22867
+False,Zeromus,none,140405
+False,Bismarck,Immortal Flames,6124
+False,Bismarck,Maelstrom,6287
+False,Bismarck,Order of the Twin Adder,7418
+False,Bismarck,none,45546
+False,Ravana,Immortal Flames,7023
+False,Ravana,Maelstrom,7210
+False,Ravana,Order of the Twin Adder,8507
+False,Ravana,none,52234
+False,Sephirot,Immortal Flames,7886
+False,Sephirot,Maelstrom,8096
+False,Sephirot,Order of the Twin Adder,9552
+False,Sephirot,none,58648
+False,Sophia,Immortal Flames,8642
+False,Sophia,Maelstrom,8872
+False,Sophia,Order of the Twin Adder,10468
+False,Sophia,none,64273
+False,Zurvan,Immortal Flames,6021
+False,Zurvan,Maelstrom,6181
+False,Zurvan,Order of the Twin Adder,7292
+False,Zurvan,none,44775
