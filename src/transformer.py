@@ -1,10 +1,23 @@
 import pandas as pd
 
-def transform_isEndgame(df):
+def transform_isEndgame():
     column = "Dim_isEndgame"
     data = {
         "true",
         "false"
+    }
+
+    df = pd.DataFrame(data, columns=[column])
+
+    return df
+
+def transform_GrandCompany():
+    column = "Dim_GrandCompany"
+    data = {
+        "None",
+        "Maelstrom",
+        "Immortal Flames",
+        "Order of the Twin Adder"
     }
 
     df = pd.DataFrame(data, columns=[column])

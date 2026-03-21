@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 from transformer import transform_isEndgame
+from transformer import transform_GrandCompany 
 from transformer import transform_tribal_data 
 
 
@@ -14,16 +15,26 @@ OUT_DIR = os.path.join(DATA_ROOT, 'transformed')
 def process_files():
     os.makedirs(OUT_DIR, exist_ok=True)
     
+    # isEndgame
+
+    dim_isEndgame_df = transform_isEndgame()
+        
+    dim_isEndgame_df.to_csv(os.path.join(OUT_DIR, 'Dim_isEndgame.csv'), index=False)
+
+    # grandCompany
+
+    dim_GrandCompany_df = transform_GrandCompany()
+        
+    dim_GrandCompany_df.to_csv(os.path.join(OUT_DIR, 'Dim_GrandCompany.csv'), index=False)
+
+    # Tribals Interactions
+
     target_file = 'Tribal_Interactions.csv'
     input_path = os.path.join(RAW_DIR, target_file)
     
     if os.path.exists(input_path):
         print(f"Reading: {input_path}")
         df = pd.read_csv(input_path)
-        
-        dim_isEndgame_df = transform_isEndgame(df)
-        
-        dim_isEndgame_df.to_csv(os.path.join(OUT_DIR, 'Dim_isEndgame.csv'), index=False)
         
         dim_tribes_df, sub_tribe_cat_df = transform_tribal_data(df)
         

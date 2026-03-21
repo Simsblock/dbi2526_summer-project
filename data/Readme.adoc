@@ -10,12 +10,15 @@ Data from https://ffxivcensus.com was used for the following raw .csv:
 ==== Dim_isEndgame
 - 'Dim_isEngame' is a boolean value
 
+==== Dim_GrandCompany
+- 'Dim_GrandCompany' is consists out of 3 Grand Companies and the lack of one.
+
 ==== Dim_Tribes
-- 'Category' is renamed to 'Dim_Tribes'
-- 'Tribe' is renamed to 'V_Interactions'
+- 'Category' is renamed to 'Dim_Tribes'.
+- 'Tribe' is renamed to 'V_Interactions'.
 
 ==== Sub_Tribe_Categories
-- 'Dim_Tribes' is copied from Dim_Tribes
+- 'Dim_Tribes' is copied from Dim_Tribes.
 - Every Dim_Tribe gets a Furry category assigned, which was evaluated by professional furries. Said category is saved in 'V_Category'.
 
 
