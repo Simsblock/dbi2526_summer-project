@@ -7,7 +7,7 @@ from transformer import transform_regions
 from transformer import transform_sex 
 from transformer import transform_species
 from transformer import transform_tribal_data 
-from visualization import visualize_Structure
+from visualization import visualize_Structure,visualize_Normal
 
 from factgenerator import unify_realms 
 from factgenerator import caluclate_gc_percent
@@ -80,11 +80,6 @@ def process_files():
         print(f"Error: Could not find {target_file} in {RAW_DIR}")
 
     # Tribals Interactions
-
-    # visualize_Structure()
-    # visualize_Structure()
-    # visualize_Structure()
-
     target_file = 'Tribal_Interactions.csv'
     input_path = os.path.join(RAW_DIR, target_file)
     
@@ -135,53 +130,8 @@ def process_fact():
 
     df_fact.to_csv(os.path.join(FACT_OUT_DIR, 'Fact.csv'), index=False)
 
-def process_enriched_fact():
-    #realms
-    target_file = 'American_Realms.csv'
-    target_file1 = 'European_Realms.csv'
-    target_file2 = 'Japanese_Realms.csv'
-    target_file3 = 'Oceanian_Realms.csv'
-    input_path = os.path.join(RAW_DIR, target_file)
-    input_path1 = os.path.join(RAW_DIR, target_file1)
-    input_path2 = os.path.join(RAW_DIR, target_file2)
-    input_path3 = os.path.join(RAW_DIR, target_file3)
-    #ef realms
-    target_file4 = 'American_Realms_Endgame.csv'
-    target_file5 = 'European_Realms_Endgame.csv'
-    target_file6 = 'Japanese_Realms_Endgame.csv'
-    target_file7 = 'Oceanian_Realms_Endgame.csv'
-    input_path4 = os.path.join(RAW_DIR, target_file4)
-    input_path5 = os.path.join(RAW_DIR, target_file5)
-    input_path6 = os.path.join(RAW_DIR, target_file6)
-    input_path7 = os.path.join(RAW_DIR, target_file7)
-    #gc
-    target_file8 = 'GrandCompanies.csv'
-    input_path8 = os.path.join(RAW_DIR, target_file8)
-    #species
-    target_file9 = 'Species_Sex.csv'
-    input_path9 = os.path.join(RAW_DIR, target_file9)
-    target_file10 = 'Species_Sex_Endgame.csv'
-    input_path10 = os.path.join(RAW_DIR, target_file10)
+    visualize_Normal(df_fact)
 
-    df = pd.read_csv(input_path)
-    df1 = pd.read_csv(input_path1)
-    df2 = pd.read_csv(input_path2)
-    df3 = pd.read_csv(input_path3)
-    df4 = pd.read_csv(input_path4)
-    df5 = pd.read_csv(input_path5)
-    df6 = pd.read_csv(input_path6)
-    df7 = pd.read_csv(input_path7)
-    df8 = pd.read_csv(input_path8)
-    df9 = pd.read_csv(input_path9)
-    df10 = pd.read_csv(input_path10)
-
-    df_fact = generate_enriched_fact(
-        unify_realms(df,df1,df2,df3,df4,df5,df6,df7), 
-        caluclate_gc_percent(df8),
-        unify_species_pop(df9,df10)
-        )
-
-    df_fact.to_csv(os.path.join(FACT_OUT_DIR, 'Enriched_Fact.csv'), index=False)
 
 def process_enriched_fact():
     #realms
