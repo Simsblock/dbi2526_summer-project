@@ -25,6 +25,41 @@ include::../data/Readme.adoc[]
 * 
 
 == Cube Visualization
+=== Facts
+==== Fact
+image::./media/fact.png[]
+
+==== Enriched Fact
+image::./media/enriched_fact.png[]
+
+==== Ridicilous Fact
+image::./media/ridicilous_fact.png[]
+
+=== Dimensions
+==== Dim_isEndgame
+image::./media/dim_isEndgame.png[]
+
+==== Dim_Realms
+image::./media/dim_realms.png[]
+
+==== Dim_GrandCompany
+image::./media/dim_GrandCompany.png[]
+
+==== Dim_Species
+image::./media/dim_species.png[]
+
+==== Dim_Tribes
+image::./media/dim_tribes.png[]
+
+=== Subdimensions
+==== Sub_Regions
+image::./media/sub_regions.png[]
+
+==== Sub_Sex
+image::./media/sub_sex.png[]
+
+==== Sub_Tribe_Categories
+image::./media/sub_tribe_categories.png[]
 
 == Ridicilous Dimensions
 
