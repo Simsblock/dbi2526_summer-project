@@ -29,9 +29,7 @@ Analyse von Spielerdaten vom MMORPG Final Fantasy 14.
 * Remove duplicates from streaming data
 * Handle outliers in delay values
 
-=== Source Links
-* https://luckybancho.ldblog.jp/wsurvey_en.htm?world=Global
-* https://ffxivcensus.com/
+
 
 == Enrichment Data
 
@@ -46,4 +44,35 @@ Erweiterung der Spezies um die Geschlechterverteilung.
 * Anfügen
 
 === Source Links
-* https://open-meteo.com/
+* https://luckybancho.ldblog.jp/wsurvey_en.htm?world=Global
+* https://ffxivcensus.com/
+
+== Cube structure:
+
+FACT Playercount
+-------------
+Dim_IsEndgame
+Dim_Realm
+Dim_GrandCompany
+V_Player_Amount
+
+Dim_Realm
+----------------
+Dim_Realm
+Sub_Region
+
+
+senseless enrichment
+-> anteil der femal characters im endgame mit dem anteil der female characters allgemein vergelicehn
+
+
+
+
+
+
+
+
+
+
+
+

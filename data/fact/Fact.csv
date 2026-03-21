@@ -1,4 +1,4 @@
-Dim_isEndgame,Dim_Realms,Dim_GrandCompany,Fact_PlayerCount
+Dim_isEndgame,Dim_Realms,Dim_GrandCompany,V_PlayerCount
 True,Adamantoise,Immortal Flames,2440
 True,Adamantoise,Maelstrom,2505
 True,Adamantoise,Order of the Twin Adder,2955
