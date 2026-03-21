@@ -1,7 +1,34 @@
-Datasources
+https://ffxivcensus.com/#commendations
 
-Wetter:
-https://archive-api.open-meteo.com/v1/archive?latitude=48.2085&longitude=16.3721&start_date=2021-01-01&end_date=2021-12-31&hourly=temperature_2m,snow_depth,snowfall,rain&format=csv
+TRIBAL QUESTS (REDEEMED MOUNT OR MINION) -> furry kategorien
+[
+    Amalj'aa    -> Scaley
+    Sylphs      -> Fey
+    Kobolds     -> Furry
+    Sahagin     -> Auquarian
+    Ixali       -> Avian
+    Vanu Vanu   -> Avian
+    Vath        -> Scaley
+    Moogles     -> Fey
+    Kojin       -> Scaley
+    Ananta      -> Scaley
+    Namazu      -> Auquarian
+    Pixies      -> Fey
+    Dwarves     -> Fey
+    Qitari      -> Furry
+    Arkasodara  -> Pachyderm
+    Loporrits   -> Furry
+    Omicrons    -> Synth
+]
 
-Fahrgäste:
-https://www.wien.gv.at/gogv/l9ogdfahrgaeste2021
+RACE AND GENDER DISTRIBUTION -> which gender plays longer & maybe per furry race
+
+HOW MANY CHARACTERS ARE THERE? -> player counter per geolocation
+
+
+https://activeplayer.io/final-fantasy-xiv/#
+https://www.rand.org/nsrd/projects/terrorism-incidents.htmlurryscaley
+
+Player Count -> Player Count on Historical Days (911)
+
+
