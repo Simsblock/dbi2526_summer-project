@@ -7,7 +7,6 @@ def visualize_Structure(input):
     print(input.head())
 
 def visualize_Normal(input):
-    visualize_Structure(input)
     df = pd.DataFrame(input)
 
     plotBar1(df)
@@ -142,3 +141,50 @@ def plotPie(df):
     plt.suptitle("")
     plt.tight_layout()
     plt.savefig("ffxiv_Pie_PlayerEndgame.png", dpi=150)
+
+def visualize_Ridiculous(input):
+    df = pd.DataFrame(input)
+    plot_pie_ridi(df)
+    plot_bar_ridi(df)
+
+    
+def plot_pie_ridi(df):
+    summary = df.groupby("V_Category")["V_Interactions"].sum()
+ 
+    # --- Plot ---
+    fig, ax = plt.subplots(figsize=(6, 6))
+ 
+    summary.plot.pie(
+    ax=ax,
+    autopct="%1.1f%%",
+    startangle=90,
+    colors=["#4C72B0", "#DD8452","#00FF6B","#5100FF","#D400FF","#C3FF00","#FF0000"],
+    wedgeprops={"edgecolor": "white", "linewidth": 1.5},
+        )
+ 
+    ax.set_ylabel("")
+    ax.set_title("Player Split: Favorite Category", fontsize=13)
+    plt.suptitle("")
+    plt.tight_layout()
+    plt.savefig("ffxiv_Pie_PlyerFavCategorie.png", dpi=150)
+
+def plot_bar_ridi(df):
+    #Bar Plot
+    pivot = df.pivot_table(
+    index="V_Category",
+    values="V_Interactions",
+    aggfunc="sum",
+    )
+
+    ax = pivot.plot.bar(figsize=(24, 10))
+    ax.set_xlabel("Category", fontsize=12)
+    ax.set_ylabel("Player Count", fontsize=12)
+    ax.set_title("Favorite Category ", fontsize=14)
+    ax.tick_params(axis="x", rotation=45)
+    ax.set_yscale("log")
+    plt.suptitle("")
+    plt.tight_layout()
+    plt.savefig("ffxiv_Bar_PlayerFavCat.png", dpi=150)
+    
+
+    

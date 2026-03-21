@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+from collections import defaultdict
 from transformer import transform_isEndgame
 from transformer import transform_grandCompany 
 from transformer import transform_realms 
@@ -7,7 +8,7 @@ from transformer import transform_regions
 from transformer import transform_sex 
 from transformer import transform_species
 from transformer import transform_tribal_data 
-from visualization import visualize_Structure,visualize_Normal
+from visualization import visualize_Normal,visualize_Ridiculous
 
 from factgenerator import unify_realms 
 from factgenerator import caluclate_gc_percent
@@ -130,7 +131,7 @@ def process_fact():
 
     df_fact.to_csv(os.path.join(FACT_OUT_DIR, 'Fact.csv'), index=False)
 
-    visualize_Normal(df_fact)
+    
 
 
 def process_enriched_fact():
@@ -185,7 +186,26 @@ def process_enriched_fact():
 
     df_fact.to_csv(os.path.join(FACT_OUT_DIR, 'Ridicilous_Fact.csv'), index=False)
 
+def visualize():
+    df_fact=  pd.read_csv(os.path.join(FACT_OUT_DIR, 'Fact.csv'))
+    df_tribe=  pd.read_csv(os.path.join(OUT_DIR, 'Dim_Tribes.csv'))
+    df_subtribe=  pd.read_csv(os.path.join(OUT_DIR, 'Sub_Tribe_Categories.csv'))
+    df_result = df_subtribe.merge(
+    df_tribe[["Dim_Tribe", "V_Interactions"]],
+    on="Dim_Tribe",
+    how="left"   # or "inner" / "outer"
+    )
+
+
+    visualize_Normal(df_fact)
+    visualize_Ridiculous(df_result)
+
+
+
+   
+
 if __name__ == "__main__":
     process_files()
     process_fact()
     process_enriched_fact()
+    visualize()
