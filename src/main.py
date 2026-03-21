@@ -7,6 +7,7 @@ from transformer import transform_regions
 from transformer import transform_sex 
 from transformer import transform_species
 from transformer import transform_tribal_data 
+from visuallization import visuallise_Structure
 
 from factgenerator import unify_realms 
 from factgenerator import caluclate_gc_percent
@@ -77,6 +78,10 @@ def process_files():
         print(f"Error: Could not find {target_file} in {RAW_DIR}")
 
     # Tribals Interactions
+
+    visuallise_Structure()
+    visuallise_Structure()
+    visuallise_Structure()
 
     target_file = 'Tribal_Interactions.csv'
     input_path = os.path.join(RAW_DIR, target_file)

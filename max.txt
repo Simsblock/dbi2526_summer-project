@@ -11,19 +11,18 @@ Analyse von Spielerdaten vom MMORPG Final Fantasy 14.
 
 === Research Questions
 * Wie sind die Spieler auf die drei Grand Companies auf einem spezifischen Server verteilt?
-* Wie viele Spieler sind auf einem spezifischen Server und im Endgame.
+* Wie viele Spieler sind auf den Servern einer spezifischen Region, aufgeteilt auf die Grand Companies und Endgame status.
 * Wie welche Realms gehören zu europäischen Servern?
 == Main Data Sources
 
 === Data Sources
-* Public transport open data from Wiener Linien (incremental updates – real-time and daily updates)
-* European mobility datasets (periodic updates – yearly/monthly snapshots)
+* https://luckybancho.ldblog.jp/wsurvey_en.htm?world=Global, Loadstone World Survey
+* https://ffxivcensus.com/, FFXIV Census
 
 === Data Characteristics
-* Incremental data: live delay and vehicle tracking updates
-* Update data: historical datasets updated periodically
+* Enthält die Spielerzahlen, getrennt per Region (eine Serverinstanz), den Endgamestatus und die zugehörige Grand Company 
 
-=== Data Cleansing Steps
+=== Data Cleansing Steps //todo change
 * Remove missing or null values (e.g., missing timestamps)
 * Standardize time formats (UTC conversion)
 * Normalize transport type categories (bus, tram, metro)
@@ -31,7 +30,8 @@ Analyse von Spielerdaten vom MMORPG Final Fantasy 14.
 * Handle outliers in delay values
 
 === Source Links
-* https://www.data.gv.at/
+* https://luckybancho.ldblog.jp/wsurvey_en.htm?world=Global
+* https://ffxivcensus.com/
 
 == Enrichment Data
 
@@ -39,14 +39,11 @@ Analyse von Spielerdaten vom MMORPG Final Fantasy 14.
 Erweiterung der Spezies um die Geschlechterverteilung.
 
 === Enrichment Sources
-* Weather data (temperature, precipitation)
-* Public holiday calendar data
+* https://ffxivcensus.com/
 
 === Data Preparation Steps
-* Align timestamps between transport and weather datasets
-* Aggregate weather data to hourly/daily levels
-* Encode categorical variables (e.g., holiday vs. non-holiday)
-* Merge datasets using date and location keys
+* Sub table für das Hinzufügen erstellen
+* Anfügen
 
 === Source Links
 * https://open-meteo.com/
