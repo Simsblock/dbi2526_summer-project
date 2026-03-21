@@ -17,6 +17,11 @@ Data from https://ffxivcensus.com was used for the following raw .csv:
 - 'Dim_Realms' concats all the 'Category' of American_Realms, European_Realms, Japanese_Realms and Oceanian_Realms.
 - 'Category' is renamed to 'Dim_Realms'
 
+==== Dim_Regions
+- 'Dim_Realms' concats all the 'Category' of American_Realms, European_Realms, Japanese_Realms and Oceanian_Realms.
+- 'Category' is renamed to 'Dim_Realms'
+- Adds 'V_Region' which contains their Server Locations / Intended Regions.
+
 ==== Dim_Tribes
 - 'Category' is renamed to 'Dim_Tribes'.
 - 'Tribe' is renamed to 'V_Interactions'.

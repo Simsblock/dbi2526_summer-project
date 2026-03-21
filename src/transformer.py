@@ -11,7 +11,7 @@ def transform_isEndgame():
 
     return df
 
-def transform_GrandCompany():
+def transform_grandCompany():
     column = "Dim_GrandCompany"
     data = {
         "None",
@@ -35,6 +35,28 @@ def transform_realms(df,df1,df2,df3):
     combined = pd.concat(categories, ignore_index=True)
     
     df = pd.DataFrame(combined, columns=['Category']).rename(
+        columns={'Category': 'Dim_Realms'}
+    ).drop_duplicates().reset_index(drop=True)
+    
+    return df
+
+def transform_regions(df,df1,df2,df3):
+    
+    df["V_Region"] = "Americas"
+    df1["V_Region"] = "Europe"
+    df2["V_Region"] = "Japan"
+    df3["V_Region"] = "Oceania"
+    
+    categories = [
+        df[['Category','V_Region']], 
+        df1[['Category','V_Region']], 
+        df2[['Category','V_Region']], 
+        df3[['Category','V_Region']]
+    ]
+
+    combined = pd.concat(categories, ignore_index=True)
+    
+    df = combined.rename(
         columns={'Category': 'Dim_Realms'}
     ).drop_duplicates().reset_index(drop=True)
     

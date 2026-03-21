@@ -1,9 +1,10 @@
 import os
 import pandas as pd
 from transformer import transform_isEndgame
-from transformer import transform_GrandCompany 
-from transformer import transform_tribal_data 
+from transformer import transform_grandCompany 
 from transformer import transform_realms 
+from transformer import transform_regions
+from transformer import transform_tribal_data 
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -24,7 +25,7 @@ def process_files():
 
     # grandCompany
 
-    dim_GrandCompany_df = transform_GrandCompany()
+    dim_GrandCompany_df = transform_grandCompany()
         
     dim_GrandCompany_df.to_csv(os.path.join(OUT_DIR, 'Dim_GrandCompany.csv'), index=False)
 
@@ -46,6 +47,9 @@ def process_files():
 
         dim_Realm_df = transform_realms(df,df1,df2,df3)
         dim_Realm_df.to_csv(os.path.join(OUT_DIR, 'Dim_Realms.csv'), index=False)
+
+        sub_Region_df = transform_regions(df,df1,df2,df3)
+        sub_Region_df.to_csv(os.path.join(OUT_DIR, 'Sub_Regions.csv'), index=False)
 
     else:
         print(f"Error: Could not find raws for regions")
