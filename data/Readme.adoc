@@ -1,78 +1,82 @@
 == Data
 === Sources
-
 ==== FFXIVCensus
 Data from https://ffxivcensus.com was used for the following raw .csv:
 
-- Tribal_Interactions.csv -> https://ffxivcensus.com/#tribal
+* American_Realms.csv -> https://ffxivcensus.com/#rat-na
+* Japanese_Realms.csv -> https://ffxivcensus.com/#rat-jp
+* American_Realms.csv -> https://ffxivcensus.com/#rat-eu
+* Japanese_Realms.csv -> https://ffxivcensus.com/#rat-oc
+* American_Realms_Endgame.csv -> https://ffxivcensus.com/#ra-na
+* Japanese_Realms_Endgame.csv -> https://ffxivcensus.com/#ra-jp
+* American_Realms_Endgame.csv -> https://ffxivcensus.com/#ra-eu
+* Japanese_Realms_Endgame.csv -> https://ffxivcensus.com/#ra-oc
+* GrandCompanies.csv -> https://ffxivcensus.com/#grandcompany (All Characters)
+* Species_Sex.csv -> https://ffxivcensus.com/#racegender (All Characters)
+* Species_Sex_Endgame.csv -> https://ffxivcensus.com/#racegender (Endgame Characters)
+* Tribal_Interactions.csv -> https://ffxivcensus.com/#tribal
+
+Furthermore the values for Total Population and Endgame Characters was taken from: https://ffxivcensus.com/#population
 
 === Transformations
-==== Dim_isEndgame
-- 'Dim_isEngame' is a boolean value
+==== Dimensions
+===== Dim_isEndgame
+* 'Dim_isEngame' is a boolean value
 
-==== Dim_GrandCompany
-- 'Dim_GrandCompany' consists out of 3 Grand Companies and the lack of one.
+===== Dim_GrandCompany
+* 'Dim_GrandCompany' consists out of 3 Grand Companies and the lack of one.
 
-==== Dim_Realms
-- 'Dim_Realms' concats all the 'Category' of American_Realms, European_Realms, Japanese_Realms and Oceanian_Realms.
-- 'Category' is renamed to 'Dim_Realms'
+===== Dim_Realms
+* 'Dim_Realms' concats all the 'Category' of American_Realms, European_Realms, Japanese_Realms and Oceanian_Realms.
+* 'Category' is renamed to 'Dim_Realms'
 
-==== Sub_Regions
-- 'Dim_Realms' concats all the 'Category' of American_Realms, European_Realms, Japanese_Realms and Oceanian_Realms.
-- 'Category' is renamed to 'Dim_Realms'
-- Adds 'V_Region' which contains their Server Locations / Intended Regions.
+===== Sub_Regions
+* 'Dim_Realms' concats all the 'Category' of American_Realms, European_Realms, Japanese_Realms and Oceanian_Realms.
+* 'Category' is renamed to 'Dim_Realms'
+* Adds 'V_Region' which contains their Server Locations / Intended Regions.
 
-==== Dim_Species
-- Copies 'Category' from Species_Sex_Engame.csv. The Endgame Version is used, since it is cleaner.
-- 'Category' is renamed to 'Dim_Species'.
+==== Enrichment Dimensions
 
-==== Sub_Sex
-- 'Sub_Sex' consists out of 2 Sexes: Male and Female.
+===== Dim_Species
+* Copies 'Category' from Species_Sex_Engame.csv. The Endgame Version is used, since it is cleaner.
+* 'Category' is renamed to 'Dim_Species'.
 
-==== Dim_Tribes
-- Copies 'Category' from Tribal_Interactions.csv.
-- 'Category' is renamed to 'Dim_Tribes'.
-- 'Tribe' is renamed to 'V_Interactions'.
+===== Sub_Sex
+* 'Sub_Sex' consists out of 2 Sexes: Male and Female.
 
-==== Sub_Tribe_Categories
-- 'Dim_Tribes' is copied from Dim_Tribes.
-- Every Dim_Tribe gets a Furry category assigned, which was evaluated by professional furries. Said category is saved in 'V_Category'.
+===== Dim_Tribes
+* Copies 'Category' from Tribal_Interactions.csv.
+* 'Category' is renamed to 'Dim_Tribes'.
+* 'Tribe' is renamed to 'V_Interactions'.
 
+===== Sub_Tribe_Categories
+* 'Dim_Tribes' is copied from Dim_Tribes.
+* Every Dim_Tribe gets a furry-category assigned, which was evaluated by professional furries. Said categories are in the column 'V_Category'.
 
-=== Temporary Stuff!!!!
+==== Fact Tables
+===== Fact
+The base fact table shows the player amount per realm, grand company, and endgame status.
 
-WARNING: This is temporary!
+Steps taken to achieve this table:
 
-https://ffxivcensus.com/#commendations
+* Realm-population numbers for total and endgame players as a calculation base
+* Multiply by the percentile distribution of grand companies, which is calculated with the grand company population amount and the total population amount.
 
-TRIBAL QUESTS (REDEEMED MOUNT OR MINION) -> furry kategorien
-[
-    Amalj'aa    -> Scaley
-    Sylphs      -> Fey
-    Kobolds     -> Furry
-    Sahagin     -> Auquarian
-    Ixali       -> Avian
-    Vanu Vanu   -> Avian
-    Vath        -> Scaley
-    Moogles     -> Fey
-    Kojin       -> Scaley
-    Ananta      -> Scaley
-    Namazu      -> Auquarian
-    Pixies      -> Fey
-    Dwarves     -> Fey
-    Qitari      -> Furry
-    Arkasodara  -> Pachyderm
-    Loporrits   -> Furry
-    Omicrons    -> Synth
-]
+===== Enriched Fact
+The base fact table shows the player amount per realm, grand company, endgame status, and species.
 
-RACE AND GENDER DISTRIBUTION -> which gender plays longer & maybe per furry race
+Steps taken to achieve this table:
 
-HOW MANY CHARACTERS ARE THERE? -> player counter per geolocation
+* Realm-population numbers for total and endgame players as a calculation base
+* Multiply by the percentile distribution of grand companies, which is calculated with the grand company population amount and the total population amount.
+* Multiply by the percentile distribution of species, which was calculated with the total species population and the total population, or in the case of endgame characters, with the endgame species population and the endgame population.
 
+===== Ridiculous Fact
+The Base-Fact-Table shows the player amount per realm,grand company, endgame status and species. Furthermore it also shows how many people have completed the Tribe-Interactions-Quests for the same attributes.
 
-https://activeplayer.io/final-fantasy-xiv/#
-https://www.rand.org/nsrd/projects/terrorism-incidents.htmlurryscaley
+Steps taken to achieve this table:
 
-Player Count -> Player Count on Historical Days (911)
-
+* Realm-population numbers for total and endgame players as a calculation base
+* Multiply by percentile distribution of grand companies, which is calculated with the grand company population amount and the total population amount.
+* Multiply by percentile distribution of species, which was calculated with the total species population and the total population or in the case of endgame characters with the endgame species population and the endgame population.
+* Multiply by percentile distribution of completed quests, which was calculated with the total players who completed said quests per tribe and total population.
