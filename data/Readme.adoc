@@ -7,6 +7,9 @@ Data from https://ffxivcensus.com was used for the following raw .csv:
 - Tribal_Interactions.csv -> https://ffxivcensus.com/#tribal
 
 === Transformations
+==== Dim_isEndgame
+- 'Dim_isEngame' is a boolean value
+
 ==== Dim_Tribes
 - 'Category' is renamed to 'Dim_Tribes'
 - 'Tribe' is renamed to 'V_Interactions'
