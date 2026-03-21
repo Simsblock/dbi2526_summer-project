@@ -1,6 +1,7 @@
 import os
 import pandas as pd
-from transformer import transform_tribal_data  # Direct import since they are in the same folder
+from transformer import transform_isEndgame
+from transformer import transform_tribal_data 
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -19,6 +20,10 @@ def process_files():
     if os.path.exists(input_path):
         print(f"Reading: {input_path}")
         df = pd.read_csv(input_path)
+        
+        dim_isEndgame_df = transform_isEndgame(df)
+        
+        dim_isEndgame_df.to_csv(os.path.join(OUT_DIR, 'Dim_isEndgame.csv'), index=False)
         
         dim_tribes_df, sub_tribe_cat_df = transform_tribal_data(df)
         

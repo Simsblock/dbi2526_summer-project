@@ -1,10 +1,17 @@
 import pandas as pd
 
-def transform_tribal_data(df):
-    """
-    Performs the specific column renaming and mapping for Tribal data.
-    """
+def transform_isEndgame(df):
+    column = "Dim_isEndgame"
+    data = {
+        "true",
+        "false"
+    }
 
+    df = pd.DataFrame(data, columns=[column])
+
+    return df
+
+def transform_tribal_data(df):
     df_transformed = df.rename(columns={
         'Category': 'Dim_Tribe',
         'Tribe': 'V_Interactions'
