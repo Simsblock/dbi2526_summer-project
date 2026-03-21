@@ -7,13 +7,12 @@
 == Idea & Research Questions
 
 === Idea
-Analysis of European public transport usage and delays to identify patterns, peak times, and inefficiencies.
+Analyse von Spielerdaten vom MMORPG Final Fantasy 14.
 
 === Research Questions
-* How do delays vary for a specific city across different times of the day?
-* How do delays differ by city, transport type (bus, tram, metro), and weekday vs. weekend?
-* How do yearly delay trends break down into monthly and daily patterns?
-
+* Wie sind die Spieler auf die drei Grand Companies auf einem spezifischen Server verteilt?
+* Wie viele Spieler sind auf einem spezifischen Server und spielen einen Männlichen Character im Endgame.
+* Wie welche Realms gehören zu europäischen Servern?
 == Main Data Sources
 
 === Data Sources
