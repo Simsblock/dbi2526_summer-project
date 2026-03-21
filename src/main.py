@@ -7,7 +7,7 @@ from transformer import transform_regions
 from transformer import transform_sex 
 from transformer import transform_species
 from transformer import transform_tribal_data 
-from visuallization import visuallise_Structure
+from visualization import visualize_Structure
 
 from factgenerator import unify_realms 
 from factgenerator import caluclate_gc_percent
@@ -79,10 +79,6 @@ def process_files():
 
     # Tribals Interactions
 
-    visuallise_Structure()
-    visuallise_Structure()
-    visuallise_Structure()
-
     target_file = 'Tribal_Interactions.csv'
     input_path = os.path.join(RAW_DIR, target_file)
     
@@ -133,6 +129,7 @@ def process_fact():
 
     df_fact.to_csv(os.path.join(FACT_OUT_DIR, 'Fact.csv'), index=False)
 
+    visualize_Structure(df_fact)
 if __name__ == "__main__":
     process_files()
     process_fact()
