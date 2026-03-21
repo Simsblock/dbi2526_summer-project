@@ -1,3 +1,25 @@
+== Data
+=== Sources
+
+==== FFXIVCensus
+Data from https://ffxivcensus.com was used for the following raw .csv:
+
+- Tribal_Interactions.csv -> https://ffxivcensus.com/#tribal
+
+=== Transformations
+==== Dim_Tribes
+- 'Category' is renamed to 'Dim_Tribes'
+- 'Tribe' is renamed to 'V_Interactions'
+
+==== Sub_Tribe_Categories
+- 'Dim_Tribes' is copied from Dim_Tribes
+- Every Dim_Tribe gets a Furry category assigned, which was evaluated by professional furries. Said category is saved in 'V_Category'.
+
+
+=== Temporary Stuff!!!!
+
+WARNING: This is temporary!
+
 https://ffxivcensus.com/#commendations
 
 TRIBAL QUESTS (REDEEMED MOUNT OR MINION) -> furry kategorien
@@ -30,5 +52,4 @@ https://activeplayer.io/final-fantasy-xiv/#
 https://www.rand.org/nsrd/projects/terrorism-incidents.htmlurryscaley
 
 Player Count -> Player Count on Historical Days (911)
-
 
