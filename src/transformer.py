@@ -62,6 +62,22 @@ def transform_regions(df,df1,df2,df3):
     
     return df
 
+def transform_sex():
+    column = "Dim_Sex"
+    data = {
+        "Male",
+        "Female"
+    }
+
+    df = pd.DataFrame(data, columns=[column])
+
+    return df
+
+def transform_species(df):
+    species_df = df[['Category']].rename(columns={'Category': 'Dim_Species'})
+
+    return species_df
+
 def transform_tribal_data(df):
     df_transformed = df.rename(columns={
         'Category': 'Dim_Tribe',

@@ -4,6 +4,8 @@ from transformer import transform_isEndgame
 from transformer import transform_grandCompany 
 from transformer import transform_realms 
 from transformer import transform_regions
+from transformer import transform_sex 
+from transformer import transform_species
 from transformer import transform_tribal_data 
 from visuallization import visuallise_Structure
 
@@ -55,6 +57,21 @@ def process_files():
     else:
         print(f"Error: Could not find raws for regions")
 
+    # Species & Sex
+    target_file = 'Species_Sex_Endgame.csv'
+    input_path = os.path.join(RAW_DIR, target_file)
+    
+    if os.path.exists(input_path):
+        df = pd.read_csv(input_path)
+        
+        dim_species_df = transform_species(df)
+        sub_sex_df = transform_sex()
+
+        dim_species_df.to_csv(os.path.join(OUT_DIR, 'Dim_Species.csv'), index=False)
+        sub_sex_df.to_csv(os.path.join(OUT_DIR, 'Sub_Sex.csv'), index=False)
+    else:
+        print(f"Error: Could not find {target_file} in {RAW_DIR}")
+
     # Tribals Interactions
 
     visuallise_Structure()
@@ -73,8 +90,5 @@ def process_files():
         sub_tribe_cat_df.to_csv(os.path.join(OUT_DIR, 'Sub_Tribe_Categories.csv'), index=False)
     else:
         print(f"Error: Could not find {target_file} in {RAW_DIR}")
-
-    
-
 if __name__ == "__main__":
     process_files()
