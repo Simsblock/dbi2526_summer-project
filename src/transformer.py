@@ -27,7 +27,7 @@ def transform_tribal_data(df):
         "Qitari": "Furry", 
         "Arkasodara": "Pachyderm",
         "Loporrit": "Furry", 
-        "Omicron": "Synth"
+        "Omnicron": "Synth"
     }
     
     sub_tribe_df = pd.DataFrame(df_transformed['Dim_Tribe'].unique(), columns=['Dim_Tribe'])
