@@ -24,6 +24,22 @@ def transform_GrandCompany():
 
     return df
 
+def transform_realms(df,df1,df2,df3):
+    categories = [
+        df['Category'], 
+        df1['Category'], 
+        df2['Category'], 
+        df3['Category']
+    ]
+
+    combined = pd.concat(categories, ignore_index=True)
+    
+    df = pd.DataFrame(combined, columns=['Category']).rename(
+        columns={'Category': 'Dim_Realms'}
+    ).drop_duplicates().reset_index(drop=True)
+    
+    return df
+
 def transform_tribal_data(df):
     df_transformed = df.rename(columns={
         'Category': 'Dim_Tribe',

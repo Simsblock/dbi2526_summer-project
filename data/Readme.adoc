@@ -11,7 +11,11 @@ Data from https://ffxivcensus.com was used for the following raw .csv:
 - 'Dim_isEngame' is a boolean value
 
 ==== Dim_GrandCompany
-- 'Dim_GrandCompany' is consists out of 3 Grand Companies and the lack of one.
+- 'Dim_GrandCompany' consists out of 3 Grand Companies and the lack of one.
+
+==== Dim_Realms
+- 'Dim_Realms' concats all the 'Category' of American_Realms, European_Realms, Japanese_Realms and Oceanian_Realms.
+- 'Category' is renamed to 'Dim_Realms'
 
 ==== Dim_Tribes
 - 'Category' is renamed to 'Dim_Tribes'.
