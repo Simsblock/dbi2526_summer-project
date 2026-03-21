@@ -5,6 +5,7 @@ from transformer import transform_grandCompany
 from transformer import transform_realms 
 from transformer import transform_regions
 from transformer import transform_tribal_data 
+from visuallization import visuallise_Structure
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -56,6 +57,10 @@ def process_files():
 
     # Tribals Interactions
 
+    visuallise_Structure()
+    visuallise_Structure()
+    visuallise_Structure()
+
     target_file = 'Tribal_Interactions.csv'
     input_path = os.path.join(RAW_DIR, target_file)
     
@@ -68,6 +73,8 @@ def process_files():
         sub_tribe_cat_df.to_csv(os.path.join(OUT_DIR, 'Sub_Tribe_Categories.csv'), index=False)
     else:
         print(f"Error: Could not find {target_file} in {RAW_DIR}")
+
+    
 
 if __name__ == "__main__":
     process_files()
