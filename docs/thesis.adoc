@@ -7,46 +7,26 @@
 == Idea & Research Questions
 
 === Idea
-Analyse von Spielerdaten vom MMORPG Final Fantasy 14.
+Analysis of player data from the MMORPG game Final Fantasy XIV: A Realm Reborn.
 
 === Research Questions
+
 * Wie sind die Spieler auf die drei Grand Companies auf einem spezifischen Server verteilt?
 * Wie viele Spieler sind auf einem spezifischen Server und im Endgame.
 * Wie welche Realms gehören zu europäischen Servern?
-== Main Data Sources
 
-=== Data Sources
-* Public transport open data from Wiener Linien (incremental updates – real-time and daily updates)
-* European mobility datasets (periodic updates – yearly/monthly snapshots)
+// Sources & Data
+include::../data/Readme.adoc[]
 
-=== Data Characteristics
-* Incremental data: live delay and vehicle tracking updates
-* Update data: historical datasets updated periodically
+== Enrichment Idea
+=== Ridiculous Research Questions
 
-=== Data Cleansing Steps
-* Remove missing or null values (e.g., missing timestamps)
-* Standardize time formats (UTC conversion)
-* Normalize transport type categories (bus, tram, metro)
-* Remove duplicates from streaming data
-* Handle outliers in delay values
+* Which Furry-Subcategory is most popular according to player data regarding the Tribes leveling mechanic. (drill)
+* 
 
-=== Source Links
-* https://www.data.gv.at/
+== Cube Visualization
 
-== Enrichment Data
+== Ridicilous Dimensions
 
-=== Enrichment Idea
-Erweiterung der Spezies um die Geschlechterverteilung.
+== Report on Research Questions
 
-=== Enrichment Sources
-* Weather data (temperature, precipitation)
-* Public holiday calendar data
-
-=== Data Preparation Steps
-* Align timestamps between transport and weather datasets
-* Aggregate weather data to hourly/daily levels
-* Encode categorical variables (e.g., holiday vs. non-holiday)
-* Merge datasets using date and location keys
-
-=== Source Links
-* https://open-meteo.com/
