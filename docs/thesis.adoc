@@ -22,7 +22,6 @@ include::../data/Readme.adoc[]
 === Ridiculous Research Questions
 
 1) Which Furry-Subcategory is most popular according to player data regarding the Tribes leveling mechanic?
-2) Do players who play female characters play longer?
 
 == Cube Visualization
 === Facts
@@ -65,37 +64,42 @@ image::./media/cube/sub_tribe_categories.png[]
 See Enrichment Dimensions in Data
 
 == GeoData
+
 GeoData is plotted according to total players per region.
+
+image::media/visualizations/ffxiv_Geo.png[]
 
 == Report on Research Questions
 === Research Questions
 ==== Question 1
 ===== Discussion
 ====== Assumption
+The assumtion was that all three companies should have roughtly equal amounts of players
 
 ====== Result
+The vast majority is not part of any grand company, while the comapy "Order of the Twin Adder" is in second place with a significantly bigger playercount then the oder 2.
 
 ===== Plot
 //insert Images of plots
+image::media/visualizations/ffxiv_Bar_PlayerEndgameCompany.png[]
 
 ==== Question 2
 ===== Discussion
 ====== Assumption
+The proportion between endgame and general playeramount should be similar between all servers.
 
 ====== Result
+It is for all servers except for the server "Alpha" which was a newlie opened server at the time, so a lower portion of endgame players was expected
 
 ===== Plot
 //insert Images of plots
-
+image::media/visualizations/ffxiv_Bar_PlayerEndgameRealm.png[]
+image::media/visualizations/ffxiv_Box_PlayerEndgameRealm.png[]
 ==== Question 3
 ===== Discussion
-====== Assumption
-
-
 ====== Result
+There are 16 realms on european servers
 
-===== Plot
-//insert Images of plots
 
 === Ridiculous Research Questions
 ==== Question 1
@@ -104,18 +108,9 @@ GeoData is plotted according to total players per region.
 The assumption was that furry-tribes are the most popular kind of furry-category, since it is the most standard furry-category.
 
 ====== Result
+The most popular category turned out to be fey's, closely followed by scalies
 
 ===== Plot
-//insert Images of plots
-
-==== Question 2
-===== Discussion
-====== Assumption
-The assumption was that female players play longer, since they enjoy the game more thoroughly due to appearing as female. +
-Furthermore players enjoy benefits due to being treated better in the game when playing female characters.
-
-====== Result
-
-
-===== Plot
+image::media/visualizations/ffxiv_Bar_PlayerFavCat.png[]
+image::media/visualizations/ffxiv_Pie_PlyerFavCategorie.png[]
 //insert Images of plots
