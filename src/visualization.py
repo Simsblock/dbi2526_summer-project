@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import math
+import plotly.express as px
 
 def visualize_Structure(input):
     print(input.head())
@@ -186,5 +187,27 @@ def plot_bar_ridi(df):
     plt.tight_layout()
     plt.savefig("ffxiv_Bar_PlayerFavCat.png", dpi=150)
     
+
+def visualize_Geo(input):
+    df = pd.DataFrame(input)
+    df['label'] = df['region'] + '<br>' + df['players'].astype(str)
+
+    fig = px.scatter_geo(
+        df,
+        lat='lat', lon='lon',
+        size='players',
+        text='label',
+        title='Player Count by Region',
+        projection='natural earth'
+    )
+
+    fig.update_traces(
+        textposition='top center',
+        textfont=dict(size=13, color='black')
+    )
+
+    fig.show()
+
+
 
     

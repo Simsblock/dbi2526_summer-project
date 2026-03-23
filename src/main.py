@@ -8,7 +8,7 @@ from transformer import transform_regions
 from transformer import transform_sex 
 from transformer import transform_species
 from transformer import transform_tribal_data 
-from visualization import visualize_Normal,visualize_Ridiculous
+from visualization import visualize_Normal,visualize_Ridiculous,visualize_Geo
 
 from factgenerator import unify_realms 
 from factgenerator import caluclate_gc_percent
@@ -193,12 +193,27 @@ def visualize():
     df_result = df_subtribe.merge(
     df_tribe[["Dim_Tribe", "V_Interactions"]],
     on="Dim_Tribe",
-    how="left"   # or "inner" / "outer"
+    how="left"   
     )
+    df_realms=pd.read_csv(os.path.join(OUT_DIR, 'Sub_Regions.csv'))
+    result = df_fact.groupby('Dim_Realms')['V_PlayerCount'].sum().reset_index()
+    result=result.merge(df_realms, on='Dim_Realms', how='left')
+    
+    coords = {
+        'Americas': (10, -80),
+        'Europe':   (54,  15),
+        'Japan':    (36, 138),
+        'Oceania':  (-25, 135)
+    }
 
+
+    result['lat'] = result['V_Region'].map(lambda r: coords[r][0])
+    result['lon'] = result['V_Region'].map(lambda r: coords[r][1])
+    result['label'] = result['V_Region'] + '<br>' + result['V_PlayerCount'].astype(str)
 
     visualize_Normal(df_fact)
     visualize_Ridiculous(df_result)
+    visualize_Geo(result)
 
 
 
