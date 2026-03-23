@@ -198,10 +198,11 @@ def visualize():
     df_realms=pd.read_csv(os.path.join(OUT_DIR, 'Sub_Regions.csv'))
     result = df_fact.groupby('Dim_Realms')['V_PlayerCount'].sum().reset_index()
     result=result.merge(df_realms, on='Dim_Realms', how='left')
+    result = result.groupby('V_Region')['V_PlayerCount'].sum().reset_index()
     
     coords = {
-        'Americas': (10, -80),
-        'Europe':   (54,  15),
+        'Americas': (45, -105),
+        'Europe':   (50,  15),
         'Japan':    (36, 138),
         'Oceania':  (-25, 135)
     }
@@ -211,8 +212,8 @@ def visualize():
     result['lon'] = result['V_Region'].map(lambda r: coords[r][1])
     result['label'] = result['V_Region'] + '<br>' + result['V_PlayerCount'].astype(str)
 
-    visualize_Normal(df_fact)
-    visualize_Ridiculous(df_result)
+    # visualize_Normal(df_fact)
+    # visualize_Ridiculous(df_result)
     visualize_Geo(result)
 
 

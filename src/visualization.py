@@ -190,12 +190,11 @@ def plot_bar_ridi(df):
 
 def visualize_Geo(input):
     df = pd.DataFrame(input)
-    df['label'] = df['region'] + '<br>' + df['players'].astype(str)
-
+    df['label'] = df['V_Region'] + '<br>' + df['V_PlayerCount'].astype(str)
     fig = px.scatter_geo(
         df,
         lat='lat', lon='lon',
-        size='players',
+        size='V_PlayerCount',
         text='label',
         title='Player Count by Region',
         projection='natural earth'
@@ -203,7 +202,7 @@ def visualize_Geo(input):
 
     fig.update_traces(
         textposition='top center',
-        textfont=dict(size=13, color='black')
+        textfont=dict(size=25, color='black')
     )
 
     fig.show()
