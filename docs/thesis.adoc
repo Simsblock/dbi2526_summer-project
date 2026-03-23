@@ -11,9 +11,9 @@ Analysis of player data from the MMORPG game Final Fantasy XIV: A Realm Reborn.
 
 === Research Questions
 
-* Wie sind die Spieler auf die drei Grand Companies auf einem spezifischen Server verteilt?
-* Wie viele Spieler sind auf einem spezifischen Server und im Endgame.
-* Wie welche Realms gehören zu europäischen Servern?
+1) How are players distributed between grand companies on a specific realm? (slice)
+2) How many players are located on selected realms and are in the endgame? (dice)
+3) How many realms are located on european servers? (drill)
 
 // Sources & Data
 include::../data/Readme.adoc[]
@@ -21,8 +21,8 @@ include::../data/Readme.adoc[]
 == Enrichment Idea
 === Ridiculous Research Questions
 
-* Which Furry-Subcategory is most popular according to player data regarding the Tribes leveling mechanic. (drill)
-* 
+1) Which Furry-Subcategory is most popular according to player data regarding the Tribes leveling mechanic?
+2) Do players who play female characters play longer?
 
 == Cube Visualization
 === Facts
@@ -62,6 +62,60 @@ image::./media/cube/sub_sex.png[]
 image::./media/cube/sub_tribe_categories.png[]
 
 == Ridicilous Dimensions
+See Enrichment Dimensions in Data
+
+== GeoData
+GeoData is plotted according to total players per region.
 
 == Report on Research Questions
+=== Research Questions
+==== Question 1
+===== Discussion
+====== Assumption
 
+====== Result
+
+===== Plot
+//insert Images of plots
+
+==== Question 2
+===== Discussion
+====== Assumption
+
+====== Result
+
+===== Plot
+//insert Images of plots
+
+==== Question 3
+===== Discussion
+====== Assumption
+
+
+====== Result
+
+===== Plot
+//insert Images of plots
+
+=== Ridiculous Research Questions
+==== Question 1
+===== Discussion
+====== Assumption
+The assumption was that furry-tribes are the most popular kind of furry-category, since it is the most standard furry-category.
+
+====== Result
+
+===== Plot
+//insert Images of plots
+
+==== Question 2
+===== Discussion
+====== Assumption
+The assumption was that female players play longer, since they enjoy the game more thoroughly due to appearing as female. +
+Furthermore players enjoy benefits due to being treated better in the game when playing female characters.
+
+====== Result
+
+
+===== Plot
+//insert Images of plots

@@ -1,5 +1,5 @@
 #[Windows]
-#set shell := ["cmd", "/c"]
+set shell := ["cmd", "/c"]
 venv_dir := ".venv"
 venv := if os() == "windows" { venv_dir / "Scripts/python" } else { venv_dir / "bin/python" }
 python := "python3"
@@ -28,8 +28,8 @@ setup:
 [windows]
 setup:
     python -m venv {{venv_dir}}
-    {{venv_dir}}\Scripts\pip install --upgrade pip
-    {{venv_dir}}\Scripts\pip install -r requirements.txt
+    {{venv_dir}}\Scripts\python.exe -m pip install --upgrade pip
+    {{venv_dir}}\Scripts\python.exe -m pip install -r requirements.txt
 
 [group('venv')]
 clean:
