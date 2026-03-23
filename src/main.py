@@ -212,8 +212,8 @@ def visualize():
     result['lon'] = result['V_Region'].map(lambda r: coords[r][1])
     result['label'] = result['V_Region'] + '<br>' + result['V_PlayerCount'].astype(str)
 
-    # visualize_Normal(df_fact)
-    # visualize_Ridiculous(df_result)
+    visualize_Normal(df_fact)
+    visualize_Ridiculous(df_result)
     visualize_Geo(result)
 
 
