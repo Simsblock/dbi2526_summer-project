@@ -16,7 +16,11 @@ def visualize_Normal(input):
     plotPie(df)
 
 def plotBar1(df):
+    #2
     #Bar Plot
+    SELECTED_REALMS = ["Alpha", "Cerberus","Lich","Louisoix","Moogle","Odin","Omega"]  # <-- european realms
+ 
+    df = df[df["Dim_Realms"].isin(SELECTED_REALMS)]
     pivot = df.pivot_table(
     index="Dim_Realms",
     columns="Dim_isEndgame",
@@ -37,8 +41,12 @@ def plotBar1(df):
     plt.savefig("ffxiv_Bar_PlayerEndgameRealm.png", dpi=150)
 
 def plotBox(df):
+    #2
     #Box Plot
 
+    SELECTED_REALMS = ["Alpha", "Cerberus","Lich","Louisoix","Moogle","Odin","Omega"]  # <-- european realms
+ 
+    df = df[df["Dim_Realms"].isin(SELECTED_REALMS)]
     realms = df["Dim_Realms"].unique()
     COLS_PER_ROW = 22
     n_cols = min(COLS_PER_ROW, len(realms))
@@ -74,8 +82,9 @@ def plotBox(df):
     plt.savefig("ffxiv_Box_PlayerEndgameRealm.png", dpi=150)
 
 def plotBarStacked(df):
+    #1
     #Box plot stacked
-    SELECTED_REALMS = ["Alpha", "Cerberus","Lich","Louisoix","Moogle","Odin","Omega"]  # <-- european realms
+    SELECTED_REALMS = ["Lich"] 
  
     df_filtered = df[df["Dim_Realms"].isin(SELECTED_REALMS)]
  
