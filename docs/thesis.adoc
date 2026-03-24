@@ -13,7 +13,7 @@ Analysis of player data from the MMORPG game Final Fantasy XIV: A Realm Reborn.
 
 1) How are players distributed between grand companies on a specific realm? (slice) +
 2) How many players are located on selected realms and are in the endgame? (dice) +
-3) How many realms are located on european servers? (drill)
+3) How many realms are located on European servers? (drill)
 
 // Sources & Data
 include::../data/Readme.adoc[]
@@ -21,7 +21,7 @@ include::../data/Readme.adoc[]
 == Enrichment Idea
 === Ridiculous Research Questions
 
-1) Which Furry-Subcategory is most popular according to player data regarding the Tribes leveling mechanic?
+1) Which furry subcategory is most popular according to player data regarding the Tribes leveling mechanic?
 
 == Cube Visualization
 === Facts
@@ -31,8 +31,8 @@ image::./media/cube/fact.png[]
 ==== Enriched Fact
 image::./media/cube/enriched_fact.png[]
 
-==== Ridicilous Fact
-image::./media/cube/ridicilous_fact.png[]
+==== Ridiculous Fact
+image::./media/cube/ridiculous_fact.png[]
 
 === Dimensions
 ==== Dim_isEndgame
@@ -60,7 +60,7 @@ image::./media/cube/sub_sex.png[]
 ==== Sub_Tribe_Categories
 image::./media/cube/sub_tribe_categories.png[]
 
-== Ridicilous Dimensions
+== Ridiculous Dimensions
 See Enrichment Dimensions in Data
 
 == GeoData
@@ -74,38 +74,35 @@ image::media/visualizations/ffxiv_Geo.png[]
 ==== Question 1
 ===== Discussion
 ====== Assumption
-The assumtion was that all three companies should have roughtly equal amounts of players
+The assumption was that all three companies should have roughly equal amounts of players.
 
 ====== Result
-The vast majority is not part of any grand company, while the comapy "Order of the Twin Adder" is in second place with a significantly bigger playercount then the oder 2.
+The vast majority are not part of any grand company, while the company "Order of the Twin Adder" is in second place with a significantly bigger player count than the other 2.
 
 ===== Plot
-//insert Images of plots
 image::media/visualizations/ffxiv_Bar_PlayerEndgameCompany.png[]
 
 ==== Question 2
 ===== Discussion
 ====== Assumption
-The proportion between endgame and general playeramount should be similar between all servers.
+The proportion between endgame and general player amount should be similar between all servers.
 
 ====== Result
-It is for all servers except for the server "Alpha" which was a newlie opened server at the time, so a lower portion of endgame players was expected
+It is for all servers except for the server "Alpha" which was a newly opened server at the time, so a lower portion of endgame players was expected
 
 ===== Plot
-//insert Images of plots
 image::media/visualizations/ffxiv_Bar_PlayerEndgameRealm.png[]
 image::media/visualizations/ffxiv_Box_PlayerEndgameRealm.png[]
 ==== Question 3
 ===== Discussion
 ====== Result
-There are 16 realms on european servers
-
+There are 16 realms on European servers.
 
 === Ridiculous Research Questions
 ==== Question 1
 ===== Discussion
 ====== Assumption
-The assumption was that furry-tribes are the most popular kind of furry-category, since it is the most standard furry-category.
+The assumption was that furry tribes are the most popular kind of furry subcategory since it is the most standard furry subcategory.
 
 ====== Result
 The most popular category turned out to be fey's, closely followed by scalies
@@ -113,4 +110,3 @@ The most popular category turned out to be fey's, closely followed by scalies
 ===== Plot
 image::media/visualizations/ffxiv_Bar_PlayerFavCat.png[]
 image::media/visualizations/ffxiv_Pie_PlyerFavCategorie.png[]
-//insert Images of plots

@@ -24,25 +24,25 @@ Furthermore the values for Total Population and Endgame Characters was taken fro
 * 'Dim_isEngame' is a boolean value
 
 ===== Dim_GrandCompany
-* 'Dim_GrandCompany' consists out of 3 Grand Companies and the lack of one.
+* 'Dim_GrandCompany' consists of 3 Grand Companies and the lack of one.
 
 ===== Dim_Realms
-* 'Dim_Realms' concats all the 'Category' of American_Realms, European_Realms, Japanese_Realms and Oceanian_Realms.
+* 'Dim_Realms' concatenates all the 'Category' of American_Realms, European_Realms, Japanese_Realms and Oceanian_Realms.
 * 'Category' is renamed to 'Dim_Realms'
 
 ===== Sub_Regions
-* 'Dim_Realms' concats all the 'Category' of American_Realms, European_Realms, Japanese_Realms and Oceanian_Realms.
+* 'Dim_Realms' concatenates all the 'Category' of American_Realms, European_Realms, Japanese_Realms and Oceanian_Realms.
 * 'Category' is renamed to 'Dim_Realms'
 * Adds 'V_Region' which contains their Server Locations / Intended Regions.
 
 ==== Enrichment Dimensions
 
 ===== Dim_Species
-* Copies 'Category' from Species_Sex_Engame.csv. The Endgame Version is used, since it is cleaner.
+* Copies 'Category' from Species_Sex_Engame.csv. The Endgame version is used since it is cleaner.
 * 'Category' is renamed to 'Dim_Species'.
 
 ===== Sub_Sex
-* 'Sub_Sex' consists out of 2 Sexes: Male and Female.
+* 'Sub_Sex' consists of 2 sexes: male and female.
 
 ===== Dim_Tribes
 * Copies 'Category' from Tribal_Interactions.csv.
@@ -51,7 +51,7 @@ Furthermore the values for Total Population and Endgame Characters was taken fro
 
 ===== Sub_Tribe_Categories
 * 'Dim_Tribes' is copied from Dim_Tribes.
-* Every Dim_Tribe gets a furry-category assigned, which was evaluated by professional furries. Said categories are in the column 'V_Category'.
+* Every Dim_Tribe gets a furry subcategory assigned, which was evaluated by professional furries. Said categories are in the column 'V_Category'.
 
 ==== Fact Tables
 ===== Fact
@@ -72,11 +72,11 @@ Steps taken to achieve this table:
 * Multiply by the percentile distribution of species, which was calculated with the total species population and the total population, or in the case of endgame characters, with the endgame species population and the endgame population.
 
 ===== Ridiculous Fact
-The Base-Fact-Table shows the player amount per realm,grand company, endgame status and species. Furthermore it also shows how many people have completed the Tribe-Interactions-Quests for the same attributes.
+The base fact table shows the player amount per realm, grand company, endgame status, and species. Furthermore, it also shows how many people have completed the Tribe-Interactions-Quests for the same attributes.
 
 Steps taken to achieve this table:
 
 * Realm-population numbers for total and endgame players as a calculation base
-* Multiply by percentile distribution of grand companies, which is calculated with the grand company population amount and the total population amount.
-* Multiply by percentile distribution of species, which was calculated with the total species population and the total population or in the case of endgame characters with the endgame species population and the endgame population.
-* Multiply by percentile distribution of completed quests, which was calculated with the total players who completed said quests per tribe and total population.
+* Multiply by the percentile distribution of grand companies, which is calculated with the grand company population amount and the total population amount.
+* Multiply by the percentile distribution of species, which was calculated with the total species population and the total population or, in the case of endgame characters, with the endgame species population and the endgame population.
+* Multiply by the percentile distribution of completed quests, which was calculated with the total players who completed said quests per tribe and the total population.
