@@ -32,7 +32,7 @@ image::./media/cube/fact.png[]
 image::./media/cube/enriched_fact.png[]
 
 ==== Ridiculous Fact
-image::./media/cube/ridiculous_fact.png[]
+image::./media/cube/ridicilous_fact.png[]
 
 === Dimensions
 ==== Dim_isEndgame
