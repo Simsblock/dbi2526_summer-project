@@ -1,9 +1,8 @@
-#[Windows]
-set shell := ["cmd", "/c"]
+set windows-powershell := true
 venv_dir := ".venv"
-venv := if os() == "windows" { venv_dir / "Scripts/python" } else { venv_dir / "bin/python" }
-python := "python3"
-pip := venv_dir + "/bin/pip"
+venv     := if os() == "windows" { venv_dir / "Scripts/python" } else { venv_dir / "bin/python" }
+pip      := if os() == "windows" { venv_dir / "Scripts/pip" } else { venv_dir / "bin/pip" }
+python   := if os() == "windows" { "python" } else { "python3" }
 interpreter := venv_dir + "/bin/python"
 
 [group('exec')]
@@ -32,8 +31,15 @@ setup:
     {{venv_dir}}\Scripts\python.exe -m pip install -r requirements.txt
 
 [group('venv')]
+[unix]
 clean:
     rm -rf {{venv_dir}}
-    rm -rf src/__pycache__
     find . -type d -name "__pycache__" -exec rm -rf {} +
     @echo "Environment cleaned."
+
+[group('venv')]
+[windows]
+clean:
+    Remove-Item -Recurse -Force -ErrorAction SilentlyContinue {{venv_dir}}
+    Get-ChildItem -Recurse -Filter __pycache__ -Directory | Remove-Item -Recurse -Force
+    Write-Host "Environment cleaned."

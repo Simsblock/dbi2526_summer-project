@@ -38,7 +38,7 @@ def plotBar1(df):
     plt.suptitle("")
     plt.tight_layout()
 
-    plt.savefig("../docs/media/visualizations/ffxiv_Bar_PlayerEndgameRealm.png", dpi=150)
+    plt.savefig("./docs/media/visualizations/ffxiv_Bar_PlayerEndgameRealm.png", dpi=150)
 
 def plotBox(df):
     #2
@@ -79,7 +79,7 @@ def plotBox(df):
         axes_flat[j].set_visible(False)
     plt.suptitle("")
     plt.tight_layout()
-    plt.savefig("../docs/media/visualizations/ffxiv_Box_PlayerEndgameRealm.png", dpi=150)
+    plt.savefig("./docs/media/visualizations/ffxiv_Box_PlayerEndgameRealm.png", dpi=150)
 
 def plotBarStacked(df):
     #1
@@ -129,7 +129,7 @@ def plotBarStacked(df):
         axes_flat[j].set_visible(False)
     plt.suptitle("")
     plt.tight_layout()
-    plt.savefig("../docs/media/visualizations/ffxiv_Bar_PlayerEndgameCompany.png", dpi=150)
+    plt.savefig("./docs/media/visualizations/ffxiv_Bar_PlayerEndgameCompany.png", dpi=150)
     
 def plotPie(df):
     summary = df.groupby("Dim_isEndgame")["V_PlayerCount"].sum()
@@ -150,7 +150,7 @@ def plotPie(df):
     ax.set_title("Player Split: Endgame vs Non-Endgame", fontsize=13)
     plt.suptitle("")
     plt.tight_layout()
-    plt.savefig("../docs/media/visualizations/ffxiv_Pie_PlayerEndgame.png", dpi=150)
+    plt.savefig("./docs/media/visualizations/ffxiv_Pie_PlayerEndgame.png", dpi=150)
 
 def visualize_Ridiculous(input):
     df = pd.DataFrame(input)
@@ -176,7 +176,7 @@ def plot_pie_ridi(df):
     ax.set_title("Player Split: Favorite Category", fontsize=13)
     plt.suptitle("")
     plt.tight_layout()
-    plt.savefig("../docs/media/visualizations/ffxiv_Pie_PlyerFavCategorie.png", dpi=150)
+    plt.savefig("./docs/media/visualizations/ffxiv_Pie_PlyerFavCategorie.png", dpi=150)
 
 def plot_bar_ridi(df):
     #Bar Plot
@@ -194,7 +194,7 @@ def plot_bar_ridi(df):
     ax.set_yscale("log")
     plt.suptitle("")
     plt.tight_layout()
-    plt.savefig("../docs/media/visualizations/ffxiv_Bar_PlayerFavCat.png", dpi=150)
+    plt.savefig("./docs/media/visualizations/ffxiv_Bar_PlayerFavCat.png", dpi=150)
     
 
 def visualize_Geo(input):
